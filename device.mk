@@ -111,6 +111,20 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += power.tegra
 
+# Recovery, including touch support
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/multirom/rm-runner.sh:recovery/root/system/bin/rm-runner.sh \
+    $(LOCAL_PATH)/multirom/twrp.fstab:recovery/root/etc/twrp.fstab \
+    $(OUT)/obj/EXECUTABLES/rm-wrapper_intermediates/LINKED/rm-wrapper:recovery/root/system/bin/rm-wrapper \
+    $(OUT)/system/bin/linker:recovery/root/system/bin/linker \
+    $(OUT)/system/lib/libc.so:recovery/root/system/lib/libc.so \
+    $(OUT)/system/lib/libdl.so:recovery/root/system/lib/libdl.so \
+    $(OUT)/system/lib/liblog.so:recovery/root/system/lib/liblog.so \
+    $(OUT)/system/lib/libm.so:recovery/root/system/lib/libm.so \
+    $(OUT)/system/lib/libstdc++.so:recovery/root/system/lib/libstdc++.so \
+    vendor/nvidia/roth/proprietary/lib/librm31080.so:recovery/root/system/lib/librm31080.so \
+    vendor/nvidia/roth/proprietary/lib/hw/ts.default.so:recovery/root/system/lib/hw/ts.default.so
+
 # Wifi
 PRODUCT_PACKAGES += \
     hostapd \

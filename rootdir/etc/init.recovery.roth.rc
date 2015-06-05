@@ -1,6 +1,7 @@
 on init
     
     # touchscreen
+    mkdir /mnt 0666 system system
     mkdir /mnt/factory 0666 system system
 
 on boot
