@@ -31,6 +31,8 @@ type tsec_device, dev_type;
 type throughput_device, dev_type;
 
 # factory block device mounted on /mnt/factory.
+type cache_block_device, dev_type;
+type userdata_block_device, dev_type;
 type factory_block_device, dev_type;
 
 # /dev/lightsensor
