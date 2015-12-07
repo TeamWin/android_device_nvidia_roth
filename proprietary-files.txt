@@ -20,7 +20,6 @@ lib/egl/libGLESv2_tegra.so
 lib/hw/audio.primary.tegra.so
 lib/hw/gps.tegra.so
 lib/hw/keystore.tegra.so
-lib/hw/sensors.roth.so
 lib/hw/ts.default.so
 lib/libdrmdecrypt.so
 lib/libinvensense_hal.so
@@ -30,9 +29,6 @@ lib/libnvoice.so
 lib/liboemcrypto.so
 lib/librm31080.so
 lib/librm_ts_service.so
-lib/libsensors.base.so
-lib/libsensors.mpl.so
-lib/libsensors.nvs_input.so
 lib/libtf_crypto_sst.so
 vendor/bin/btmacwriter
 vendor/bin/nvcgcserver

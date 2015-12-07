@@ -111,6 +111,12 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += power.tegra
 
+# Sensors
+PRODUCT_PACKAGES += sensors.roth \
+                    libsensors.base \
+                    libsensors.mpl \
+                    libsensors.nvs_input
+
 # Wifi
 PRODUCT_PACKAGES += \
     hostapd \
