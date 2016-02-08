@@ -116,6 +116,7 @@ RECOVERY_TOUCHSCREEN_FLIP_X := true
 TW_DEFAULT_ROTATION := 90
 
 # MultiROM
+TARGET_RECOVERY_IS_MULTIROM := true
 MR_INPUT_TYPE := type_b
 MR_INIT_DEVICES := device/nvidia/roth/multirom/mr_init_devices.c
 MR_DPI := hdpi
