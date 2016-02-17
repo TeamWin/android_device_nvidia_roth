@@ -118,6 +118,7 @@ PRODUCT_COPY_FILES += \
     $(OUT)/obj/EXECUTABLES/rm-wrapper_intermediates/LINKED/rm-wrapper:recovery/root/system/bin/rm-wrapper \
     $(OUT)/system/bin/linker:recovery/root/system/bin/linker \
     $(OUT)/system/lib/libc.so:recovery/root/system/lib/libc.so \
+    $(OUT)/system/lib/libc++.so:recovery/root/system/lib/libc++.so \
     $(OUT)/system/lib/libdl.so:recovery/root/system/lib/libdl.so \
     $(OUT)/system/lib/liblog.so:recovery/root/system/lib/liblog.so \
     $(OUT)/system/lib/libm.so:recovery/root/system/lib/libm.so \
