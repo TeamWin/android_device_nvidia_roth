@@ -124,7 +124,7 @@ PRODUCT_COPY_FILES += \
     $(OUT)/system/lib/libm.so:recovery/root/system/lib/libm.so \
     $(OUT)/system/lib/libstdc++.so:recovery/root/system/lib/libstdc++.so \
     vendor/nvidia/roth/proprietary/lib/librm31080.so:recovery/root/system/lib/librm31080.so \
-    vendor/nvidia/roth/proprietary/lib/hw/ts.default.so:recovery/root/system/lib/hw/ts.default.so
+    vendor/nvidia/roth/proprietary/vendor/lib/hw/ts.default.so:recovery/root/system/lib/hw/ts.default.so
 
 # Wifi
 PRODUCT_PACKAGES += \
