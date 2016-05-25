@@ -102,7 +102,7 @@ TARGET_INIT_VENDOR_LIB := libinit_roth
 TARGET_LIBINIT_DEFINES_FILE := device/nvidia/roth/init/init_roth.cpp
 
 # TWRP
-TW_THEME := landscape_hdpi
+TW_THEME := portrait_hdpi
 TW_THEME_LANDSCAPE := landscape_hdpi
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 RECOVERY_SDCARD_ON_DATA := true
@@ -111,10 +111,6 @@ TW_EXCLUDE_SUPERSU := true
 BOARD_HAS_NO_REAL_SDCARD := true
 TW_NO_EXFAT := true
 TW_NO_EXFAT_FUSE := true
-# rotate display
-RECOVERY_TOUCHSCREEN_SWAP_XY := true
-RECOVERY_TOUCHSCREEN_FLIP_X := true
-TW_DEFAULT_ROTATION := 90
 
 # MultiROM
 TARGET_RECOVERY_IS_MULTIROM := true
