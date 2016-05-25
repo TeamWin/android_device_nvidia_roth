@@ -76,7 +76,7 @@ BOARD_FLASH_BLOCK_SIZE := 4096
 TARGET_POWERHAL_VARIANT := tegra
 
 # Recovery
-COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
+BOARD_SUPPRESS_SECURE_ERASE := true
 TARGET_RECOVERY_FSTAB := device/nvidia/roth/rootdir/etc/fstab.roth
 BOARD_CUSTOM_BOOTIMG_MK := device/nvidia/roth/shbootimg.mk
 
