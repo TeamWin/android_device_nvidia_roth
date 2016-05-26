@@ -113,17 +113,3 @@ TW_NO_EXFAT_FUSE := true
 RECOVERY_TOUCHSCREEN_SWAP_XY := true
 RECOVERY_TOUCHSCREEN_FLIP_X := true
 TARGET_RECOVERY_FORCE_PIXEL_FORMAT := RGB_565
-
-# MultiROM
-TARGET_RECOVERY_IS_MULTIROM := true
-MR_INPUT_TYPE := type_b
-MR_INIT_DEVICES := device/nvidia/roth/multirom/mr_init_devices.c
-MR_DPI := hdpi
-MR_FSTAB := device/nvidia/roth/multirom/twrp.fstab
-MR_KEXEC_MEM_MIN := 0x85000000
-MR_KEXEC_DTB := true
-MR_DEVICE_HOOKS := device/nvidia/roth/multirom/mr_hooks.c
-MR_DEVICE_HOOKS_VER := 3
-MR_PAD_UP := 308
-MR_PAD_DOWN := 305
-MR_PAD_CONFIRM := 304
