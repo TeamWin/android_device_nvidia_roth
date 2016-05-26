@@ -1,2 +1,2 @@
-add_lunch_combo cm_roth-eng
-add_lunch_combo cm_roth-userdebug
+add_lunch_combo omni_roth-eng
+add_lunch_combo omni_roth-userdebug
