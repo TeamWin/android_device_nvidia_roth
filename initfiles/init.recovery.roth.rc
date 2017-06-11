@@ -17,3 +17,4 @@ on property:ro.debuggable=1
 
 # touchscreen
 service rm_ts_service /system/bin/rm-runner.sh
+    seclabel u:r:raydium:s0
