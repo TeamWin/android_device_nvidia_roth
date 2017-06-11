@@ -93,14 +93,6 @@ PRODUCT_PACKAGES += power.tegra
 # Recovery, including touch support
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/twrp/twrp.fstab:recovery/root/etc/twrp.fstab \
-    $(OUT)/obj/EXECUTABLES/rm-wrapper_intermediates/LINKED/rm-wrapper:recovery/root/system/bin/rm-wrapper \
-    $(OUT)/system/bin/linker:recovery/root/system/bin/linker \
-    $(OUT)/system/lib/libc.so:recovery/root/system/lib/libc.so \
-    $(OUT)/system/lib/libc++.so:recovery/root/system/lib/libc++.so \
-    $(OUT)/system/lib/libdl.so:recovery/root/system/lib/libdl.so \
-    $(OUT)/system/lib/liblog.so:recovery/root/system/lib/liblog.so \
-    $(OUT)/system/lib/libm.so:recovery/root/system/lib/libm.so \
-    $(OUT)/system/lib/libstdc++.so:recovery/root/system/lib/libstdc++.so \
     $(LOCAL_PATH)/twrp/librm31080.so:recovery/root/system/lib/librm31080.so \
     $(LOCAL_PATH)/twrp/ts.default.so:recovery/root/system/lib/hw/ts.default.so
 

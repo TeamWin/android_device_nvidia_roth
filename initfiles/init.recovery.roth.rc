@@ -1,23 +1,6 @@
-on init
-    
-    # touchscreen
-    mkdir /mnt 0666 system system
-    mkdir /mnt/factory 0666 system system
+import init.recovery.ray_touch.rc
+import init.recovery.nv_dev_board.usb.rc
 
 on boot
     # touchscreen
-    mount ext4 /dev/block/platform/sdhci-tegra.3/by-name/FCT /mnt/factory ro
-
-# Always start adbd on userdebug and eng builds
-on property:ro.debuggable=1
-    mkdir /system/bin 0666 system system
-    symlink /sbin/busybox /system/bin/sh
-    write /sys/class/android_usb/android0/enable 1
-    start adbd
-
-# touchscreen
-service rm_ts_service /system/bin/rm-wrapper
-    setenv TOUCH_CONF_DIR /mnt/factory/touchscreen
-    setenv TOUCH_DATA_DIR /data/touchscreen
-    setenv LD_LIBRARY_PATH /system/lib:/system/lib/hw
-    seclabel u:r:raydium:s0
+    mount ext4 /dev/block/platform/sdhci-tegra.3/by-name/FCT /mnt/factory ro context=u:object_r:factory_file:s0
