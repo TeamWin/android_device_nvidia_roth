@@ -92,7 +92,6 @@ PRODUCT_PACKAGES += power.tegra
 
 # Recovery, including touch support
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/twrp/rm-runner.sh:recovery/root/system/bin/rm-runner.sh \
     $(LOCAL_PATH)/twrp/twrp.fstab:recovery/root/etc/twrp.fstab \
     $(OUT)/obj/EXECUTABLES/rm-wrapper_intermediates/LINKED/rm-wrapper:recovery/root/system/bin/rm-wrapper \
     $(OUT)/system/bin/linker:recovery/root/system/bin/linker \
